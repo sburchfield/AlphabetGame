@@ -1,0 +1,50 @@
+body{
+   background-image: linear-gradient(#6db4ef, #188DEC);
+	 font-family: arial;
+   z-index: 1;
+   height: 100%;
+   padding: 0;
+   margin: 0;
+   height: 100vh
+}
+
+[draggable] {
+  cursor: move;
+}
+
+main{
+  text-align: center;
+}
+
+#wrapper{
+  display: flex;
+  justify-content: space-around;
+}
+
+#alphaWrapper{
+  width: 38em;
+  margin-top: 7vh;
+}
+
+#alphaWrapperColor{
+  width: 18em;
+  height: 16em;
+  margin-top: 30vh;
+  padding-top: 4em;
+  border: 5px solid yellow;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+
+@media only screen and (min-width: 1024px) {
+  #alphaWrapper{
+    margin-top: 15vh;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  #alphaWrapper{
+    margin-top: 17.5vh;
+  }
+}
