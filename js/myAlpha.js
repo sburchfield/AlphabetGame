@@ -6,10 +6,10 @@ var dragndrop = (function(){
 	var test = 0;
 	var count = 0;
 
-	// document.getElementById('playPicture').addEventListener('click', function(){
-	// 	document.getElementById('playPicture').style.display = 'none';
-	// 	document.getElementById('overlay').style.display = 'none';
-	// })
+	document.getElementById('playPicture').addEventListener('click', function(){
+		document.getElementById('playPicture').style.display = 'none';
+		document.getElementById('overlay').style.display = 'none';
+	})
 
 	function resetZ(){
 		var elements = document.querySelectorAll('img');
@@ -46,6 +46,7 @@ var dragndrop = (function(){
 		draggableImage.setAttribute('draggable', 'true');
 		document.getElementById('alphaWrapperColor').appendChild(draggableImage);
 		document.getElementById('letter' + count).addEventListener('touchstart', setLetterValue);
+		document.getElementById('letter' + count).addEventListener('mousedown', setLetterValue);
 
 		count++;
 	}
